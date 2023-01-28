@@ -30,17 +30,6 @@ app.use('/api/auth', require('./routes/auth'))
 app.use('/api/events', require('./routes/events'))
 
 
-
-
-// TODO: CRUD: eventos del calendario
-
-
-
-
-
-
-
-
 // 3. Escuchar peticiones
 app.listen( process.env.PORT, () => {
     console.log(`Servidor corriendo en el puerto ${process.env.PORT}`)
