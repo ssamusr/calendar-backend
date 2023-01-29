@@ -29,7 +29,6 @@ app.use( express.json())
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/events', require('./routes/events'))
 
-
 // 3. Escuchar peticiones
 app.listen( process.env.PORT, () => {
     console.log(`Servidor corriendo en el puerto ${process.env.PORT}`)
