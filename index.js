@@ -26,8 +26,8 @@ app.use( express.json())
 
 //2. Rutas
 // TODO: auth // crear, login, renew
-app.use('/api/auth', require('./api/auth'))
-app.use('/api/events', require('./api/events'))
+app.use('/api/auth', require('./routes/auth'))
+app.use('/api/events', require('./routes/events'))
 
 // 3. Escuchar peticiones
 app.listen( process.env.PORT, () => {
